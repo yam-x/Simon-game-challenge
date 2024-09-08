@@ -22,7 +22,14 @@ $(document).keypress(function(){
     }
     $("#level-title").text("Level 0" );
   });
-
+$(document).click(function(){
+    if(start===false)
+    {
+        nextSequence();
+        start=true;
+    }
+    $("#level-title").text("Level 0" );
+  });
 
   function checkAnswer(currentLevel){
     if(gamePattern[currentLevel]===userClickedPattern[currentLevel])
