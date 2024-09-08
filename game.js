@@ -22,7 +22,7 @@ $(document).keypress(function(){
     }
     $("#level-title").text("Level 0" );
   });
-$(document).click(function(){
+$(document).tap(function(){
     if(start===false)
     {
         nextSequence();
